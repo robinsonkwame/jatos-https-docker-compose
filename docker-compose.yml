@@ -7,7 +7,7 @@ services:
     expose:
       - "9000"
   nginx: 
-    image: nginx:latest`
+    image: nginx:latest
     container_name: production_nginx
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
