@@ -18,7 +18,9 @@ git clone https://github.com/robinsonkwame/jatos-https-docker-compose.git
 ```{bash}
 docker-compose up
 # access https://<your domain name>
-# note: even https://localhost will work; the hostname won't match the certificate but the data will be encrypted and calls like `getUserMedia` will still function
+# note: even https://localhost will work
+#   the hostname won't match the certificate but the data will be
+#   encrypted and calls like `getUserMedia` will still function
 ```
 
 HTH
