@@ -9,8 +9,8 @@ This is a simple modification that enables you to run a JATOS HTTPS server using
 ## Configuration
 ```{bash}
 git clone https://github.com/robinsonkwame/jatos-https-docker-compose.git
-# Open `docker-compose.yml` in the text editor of your choice, insert <host_path_to_your_certificate>.crt and save
-# Open `docker-compose.yml` in the text editor of your choice, insert <host_path_to_your_private_key>.key and save
+# Open `docker-compose.yml` in the text editor of your choice, change <host_path_to_your_certificate>.crt and save
+# Open `docker-compose.yml` in the text editor of your choice, change <host_path_to_your_private_key>.key and save
 # Open `ngix.conf` in the text editor of your choice, search and replace <insert your domain name here> with your domain name and save
 ```
 
