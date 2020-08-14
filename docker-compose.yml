@@ -1,0 +1,19 @@
+version: '3'
+services:
+  jatos:
+    container_name: jatos_testing
+    image: jatos/jatos:latest
+    restart: always
+    expose:
+      - "9000"
+  nginx: 
+    image: nginx:latest`
+    container_name: production_nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./<host_path_to_your_certificate>.crt:/etc/ssl/certs/localhost.crt
+      - ./<host_path_to_your_private_key>.key:/etc/ssl/private/localhost.key
+    ports:
+      - 443:443
+    depends_on: 
+      - jatos
